@@ -1,8 +1,9 @@
 package main
 
-import "net/http"
-
-import "fmt"
+import (
+	"fmt"
+	"net/http"
+)
 
 func setupRoutes() {
 	http.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
